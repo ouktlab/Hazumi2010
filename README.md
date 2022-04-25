@@ -93,3 +93,4 @@ https://github.com/yoheikikuta/bert-japanese
 
 # Authors
 * 駒谷 和範（大阪大学 産業科学研究所） komatani@sanken.osaka-u.ac.jp
+* 岡田 将吾（北陸先端科学技術大学院大学） okada-s@jaist.ac.jp
