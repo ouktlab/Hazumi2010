@@ -85,7 +85,8 @@ https://github.com/yoheikikuta/bert-japanese
 音声・映像データはすでに時刻同期が行われている． 
 言語特徴量（素性）は発話区間に対応するユーザ発話の書き起こしテキストから抽出した． 
 詳しくは[概要説明ドキュメント]
-(https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/documents/HazumiOverview.pdf)を参照のこと．
+(https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/documents/HazumiOverview.pdf)
+を参照のこと．
 
 
 
