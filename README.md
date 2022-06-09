@@ -1,14 +1,21 @@
 ﻿# Hazumi2010
 Osaka University Multimodal Dialogue Corpus (Hazumi2010)
 
-Hazumi2010では以下のファイル群を公開している（もしくは公開予定）．
+Hazumi2010では以下のファイル群を公開する．
 ```
-1. ビデオデータ（未）
+1. ビデオデータ
 2. 閲覧用ELANファイル
-3. 実験用ダンプファイル（未）
+3. 実験用ダンプファイル
 4. アンケートデータ
 ```
-現在2.がelan/以下に，3.がdumpfiles/に，4.がquestionnaire/以下にある．
+本サイトでは，2.をelan/以下で，3.をdumpfiles/で，4.をquestionnaire/以下で公開している．
+
+## 1. ビデオデータ
+
+データ利用に関する契約を交わした利用者のみに対して，NII IDR （国立情報学
+研究所 情報学研究データリポジトリ）から配布される． データの入手方法や概
+要説明ドキュメントは，NII IDRサイトを参照のこと．
+https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/
 
 ## 2. 閲覧用ELANファイル
 アノテーションや書き起こしを全て含んだeaf（ELAN annotation fomat）ファイ
@@ -25,13 +32,16 @@ elan/ 以下に，(実験参加者ID).eaf という名前で置かれている�
 例えば2010F2001は「Hazumi2010の，20歳代のある女性のデータ」を意味する．
 
 交換と呼ばれる単位ごとに，以下で示されるデータが付与されている．
-詳しくは[概要説明ドキュメント](https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/documents/HazumiOverview.pdf)を参照のこと．
+詳しくは以下の概要説明ドキュメントを参照のこと．
+https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/documents/HazumiOverviewOnline.pdf
 
 #### 実験参加者の発話の書き起こし
 #### システム発話とその対話行為
 #### 心象アノテーション
-複数の第三者が付与したもの (TS: Third Sentiment) と，実験参加者本人が付与したもの（振り返りアノテーション） (SS: Self Sentiment) がある．
+3名の第三者アノテータがが付与した (TS: Third Sentiment) ．
+
 #### 話題継続アノテーション
+3名の第三者アノテータがが付与した (TC: Topic Continuance) ．
 
 ## 3. 実験用ダンプファイル
 対話中のユーザ（実験参加者）の心象を含むラベルデータを予測するためのマルチモーダル機械学習実験を行うための利用を想定している．このファイルは， 機械学習の入力として，ユーザの音声，映像，発話内容（言語）から抽出したマルチモーダル特徴量（実数値），機械学習の出力として第三者により付与された心象値・話題継続アノテーションの値（いずれも連続値）を格納している．
@@ -81,16 +91,29 @@ https://github.com/yoheikikuta/bert-japanese
 
 
 ### マルチモーダルデータの同期方法：
-ユーザの音声データ，映像データはZoomを通じて取得した．
-音声・映像データはすでに時刻同期が行われている． 
+ユーザの音声データ，映像データはZoomを通じて取得したため，
+映像と音声の時刻同期は取れている．
 言語特徴量（素性）は発話区間に対応するユーザ発話の書き起こしテキストから抽出した． 
-詳しくは[概要説明ドキュメント]
-(https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/documents/HazumiOverview.pdf)
-を参照のこと．
 
+詳しくは[概要説明ドキュメントを参照のこと．
+https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/documents/HazumiOverviewOnline.pdf
 
+## 4. アンケートデータ
 
-詳しくは[概要説明ドキュメント](https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/documents/HazumiOverview.pdf)を参照のこと．
+実験参加者とWizardの双方に対して，実験開始前と実験終了後の両方に実施した 
+アンケートに関するデータである．
+questionnaire.xlsxというエクセルファイルとして置いている．
+[アンケート項目はHazumi1911と同様
+](https://github.com/ouktlab/Hazumi1911/blob/master/questionnaire/1911questionnaire_items.pdf)である．
+
+アンケート結果ファイルには，まず，実験参加者（実験前），
+実験参加者（実験後）， Wizard（実験前），Wizard（実験後）の4つのタブがあ
+る．このそれぞれにおいて，実験参加者は18項目，Wizardは簡略化した3項目に
+対して，8段階で回答した結果が記録されている．
+
+これに加え，「記述式」「性格特性」という2つのタブに，事後に尋ねたアンケ
+ート結果が記録されている．
+
 
 # Authors
 * 駒谷 和範（大阪大学 産業科学研究所） komatani@sanken.osaka-u.ac.jp
