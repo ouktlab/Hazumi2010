@@ -70,6 +70,9 @@ dumpfiles/
 #### TS1~TS3:
 3名により付与されたthird sentimentのアノテーション値．
 
+#### Dialogue_act
+システム発話のタイプが格納されている．
+
 #### pcm_RMSenergy_sma_max ~ F0_sma_de_kurtosis: 
 OpenSmileによって抽出された韻律特徴量. Config fileはIS09_emotion.conf.
 
@@ -78,8 +81,6 @@ OpenSmileによって抽出された韻律特徴量. Config fileはIS09_emotion.
 顔表情特徴量. 「17」のような数字はOpenFaceのlandmarkを示す. AUはaction unit.
 landmark特徴量はOpenFaceから得られる2次元座標データ(30fps)をもとに目の周り, 口の周りなどの12点のフレーム間速度, 加速度をexchange区間ごとに求め最大値, 平均値, 標準偏差を特徴量とした. またexchange区間のAUの有無の平均を特徴量とした. 
 
-#### Dialogue_act
-システム発話のタイプが格納されている．
 
 #### ADJ～bert785： 
 ユーザ発話から抽出された言語特徴量が格納されている.
