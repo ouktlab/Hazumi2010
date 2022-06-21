@@ -61,12 +61,12 @@ dumpfiles/
 マルチモーダル特徴量とアノテーションの値を含んでいる．計33人分のダンプファイルを格納している．
 
 ### 実験用ダンプファイル中のデータ説明：
-各列はデータの属性，各行は1発話対で抽出された各特徴量の数値を格納している．  
+各列はデータの属性，各行は当該交換から抽出された各特徴量の数値を格納している．  
 1行目はデータの属性名を示す．
 
 
 #### start(exchange), end(exchange):
-ユーザの上半身動画（mp4）における発話交換（1発話対の）開始，終了時間．
+ユーザの上半身動画（mp4）における交換（発話対）の開始，終了時間．
 
 #### TC1~TC3:
 3名により付与されたtopic continuanceのアノテーション値.
@@ -82,8 +82,11 @@ OpenSmileによって抽出された韻律特徴量．Config fileはIS09_emotion
 
 
 #### 17_acceleration_max~AU45_c_mean: 
-顔表情特徴量. 「17」のような数字はOpenFaceのlandmarkを示す. AUはaction unit.
-landmark特徴量はOpenFaceから得られる2次元座標データ(30fps)をもとに目の周り, 口の周りなどの12点のフレーム間速度, 加速度をexchange区間ごとに求め最大値, 平均値, 標準偏差を特徴量とした. またexchange区間のAUの有無の平均を特徴量とした. 
+顔表情特徴量．「17」のような数字はOpenFaceのlandmarkを示す．AUはaction unit．
+landmark特徴量はOpenFaceから得られる2次元座標データ(30fps)をもとに，
+目の周り，口の周りなどの12点のフレーム間速度と加速度を交換内で求め，
+最大値，平均値，標準偏差を特徴量とした．
+また交換内でのAUの有無の平均を特徴量とした. 
 
 
 #### ADJ～bert767： 
@@ -100,7 +103,7 @@ https://github.com/yoheikikuta/bert-japanese
 映像と音声の時刻同期は取れている．
 言語特徴量（素性）は発話区間に対応するユーザ発話の書き起こしテキストから抽出した． 
 
-詳しくは[概要説明ドキュメントを参照のこと．
+詳しくは概要説明ドキュメントを参照のこと．
 https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/documents/HazumiOverviewOnline.pdf
 
 ## 4. アンケートデータ
