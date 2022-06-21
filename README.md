@@ -18,7 +18,7 @@ Hazumi2010では以下のファイル群を公開する．
 https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/
 
 ## 2. 閲覧用ELANファイル
-アノテーションや書き起こしを全て含んだeaf（ELAN annotation fomat）ファイ
+アノテーションや書き起こしを全て含んだeaf（ELAN annotation format）ファイ
 ルである．
 アノテーションツールELANで，実験参加者ビデオを読み込んで使用する．
 
