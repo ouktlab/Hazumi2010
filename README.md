@@ -99,14 +99,20 @@ https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/documents/HazumiOverviewOnline.pdf
 
 ## 4. アンケートデータ
 
-実験参加者とWizardの双方に対して，実験開始前と実験終了後の両方に実施したアンケートに関するデータである．
-questionnaire.xlsxというエクセルファイルとして置いている．
+実験開始前と実験終了後の両方に実施したアンケートに関するデータである．
 [アンケート項目はHazumi1911と同様
-](https://github.com/ouktlab/Hazumi1911/blob/master/questionnaire/1911questionnaire_items.pdf)である．
+](https://github.com/ouktlab/Hazumi1911/tree/master/questionnaire/)である．
 
-アンケート結果ファイルには，まず，実験参加者（実験前），実験参加者（実験後）， Wizard（実験前），Wizard（実験後）の4つのタブがある．このそれぞれにおいて，実験参加者は18項目，Wizardは簡略化した3項目に対して，8段階で回答した結果が記録されている．
+questionnaire/  
+　├ questionnaire.xlsx　本人とWizardによるアンケート結果  
+　├ questionnaire-3rdparty-rapport.xlsx　第3者アノテータ5名が付与したラポール18項目  
+　└ questionnaire-3rdparty-personality.xlsx　第3者アノテータ5名が付与した性格特性  
 
-これに加え，「記述式」「性格特性」という2つのタブに，事後に尋ねたアンケート結果が記録されている．
+本人とWizardによるアンケートは，questionnaire.xlsxというエクセルファイルにある．
+まず，実験参加者（実験前），実験参加者（実験後）， Wizard（実験前），Wizard（実験後）の4つのタブがある．このそれぞれにおいて，実験参加者は18項目，Wizardは簡略化した3項目に対して，8段階で回答した結果が記録されている．
+さらに，「記述式」「性格特性」という2つのタブに，事後に尋ねたアンケート結果が記録されている．
+
+さらに2023年9月に，第3者アノテータ5名がそれぞれビデオを見て事後的に付与したアンケート結果（ラポール18項目，性格特性）ファイルを追加した．
 
 
 # Authors
