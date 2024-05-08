@@ -29,7 +29,7 @@ elan/ 以下に，(実験参加者ID).eaf という名前で置かれている�
 
 交換と呼ぶ単位ごとに，以下に挙げるアノテーション結果が付与されている．
 詳しくは以下の概要説明ドキュメントを参照のこと．
-https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/documents/HazumiOverviewOnline.pdf
+https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/documen/HazumiOverviewOnline.pdf
 
 #### 実験参加者の発話の書き起こし
 #### システム発話とその対話行為
@@ -60,7 +60,7 @@ dumpfiles/
 
 
 #### start(exchange), end(system), end(exchange):
-ユーザの上半身動画（mp4）における交換（発話対）の開始，システムの発話開始，交換（発話対）の終了時刻．
+ユーザの上半身動画（mp4）における交換（発話対）の開始（システム発話の開始），システムの発話終了，交換（発話対）の終了時刻．
 
 #### UI_*:
 5名により付与されたUser Impression (UI)のアノテーション値．
