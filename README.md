@@ -29,7 +29,7 @@ elan/ 以下に，(実験参加者ID).eaf という名前で置かれている�
 
 交換と呼ぶ単位ごとに，以下に挙げるアノテーション結果が付与されている．
 詳しくは以下の概要説明ドキュメントを参照のこと．
-https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/documen/HazumiOverviewOnline.pdf
+https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/documents/HazumiOverviewOnline.pdf
 
 #### 実験参加者の発話の書き起こし
 #### システム発話とその対話行為
